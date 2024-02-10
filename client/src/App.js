@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />}/>
-        <Route path="/canvas" element={<Canvas />}/>
+        <Route path="/canvas" element={<Canvas height="1000" width="1000" />}/>
       </Routes>
     </Router>
   );

@@ -2,16 +2,27 @@
     display: flex;
     flex-direction: row;
     gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarIcon{
+    width: 30px;
+    margin: 3px;
 }
 
 #sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     height: 100vh;
-    width: 300px;
-    background: black;
+    width: 40px;
+    background: rgb(131, 131, 131);
+    position: fixed;
+    float: left;
 }
 
-#canvas{
-    height: 100vh;
-    width: 100%;
-    background: white;
+#canvasStyle{
+    background-color: white;
+    border: 1px solid black;
 }
