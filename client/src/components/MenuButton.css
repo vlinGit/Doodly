@@ -1,0 +1,13 @@
+.menuButton{
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    background-color: #333343;
+    border: none;
+    color: white;
+}
+
+.menuButton:hover{
+    background-color: #4e4e4e;
+    cursor: pointer;
+}

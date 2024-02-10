@@ -1,0 +1,16 @@
+services:
+  mongo:
+    image: mongo:4.2.5
+    ports:
+      - 27018:27017
+  server:
+    build: server
+    environment:
+        WAIT_HOSTS: mongo:27017
+    ports:
+        - '5000:5000'
+  client:
+    build: client
+    ports:
+        - '8000:8000'
+    
