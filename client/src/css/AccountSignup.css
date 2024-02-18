@@ -1,0 +1,22 @@
+#signupContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    height: 60%;
+    background-color: #272829;
+    box-shadow: 0 0 12px 10px #1f2020;
+    min-width: 300px;
+    min-height: 300px;
+    gap: 10px;
+}
+
+#buttonPair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}

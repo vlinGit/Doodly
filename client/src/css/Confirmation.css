@@ -1,0 +1,19 @@
+#confirmation{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #131313b0;
+    z-index: 100;
+}
+
+#confirmPrompt{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: #232324;
+    z-index: 100;
+}

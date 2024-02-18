@@ -1,6 +1,6 @@
 body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: rgb(31, 31, 32);
+  background-color: #181a1b;
   width: 100vw;
   height: 100vh;
   color: white;
@@ -12,6 +12,9 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
 }
 
 #choice{
@@ -19,4 +22,3 @@ body{
   gap: 10px;
   width: 400px;
 }
-

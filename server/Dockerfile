@@ -2,7 +2,7 @@ FROM node:18.14.0
 
 ENV HOME /root
 
-WORKDIR /root
+WORKDIR /root/server
 
 COPY . .
 

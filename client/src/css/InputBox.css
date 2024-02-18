@@ -1,0 +1,27 @@
+#constrainImage{
+    align-items: center;
+    width: 30px;
+    display: inline-block;
+    position: absolute;
+}
+
+#inputStyle{
+    width: 85%;
+    box-sizing: border-box;
+    margin: 8px 0px 8px 40px;
+    background-color: rgba(0,0,0,0);
+    border-style: none;
+    outline: none;
+    resize: none;
+}
+
+#formStyle{
+    background-color: #828484;
+    width: 80%;
+    padding: 10px;
+    transition: 0.15s ease-in-out;
+}
+
+#formStyle:hover{
+    background-color: #656868;
+}

@@ -5,6 +5,7 @@
     background-color: #333343;
     border: none;
     color: white;
+    transition: 0.15s ease-in-out;
 }
 
 .menuButton:hover{

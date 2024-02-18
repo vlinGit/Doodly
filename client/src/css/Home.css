@@ -1,0 +1,26 @@
+#title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#title h1{
+    display: inline-block;
+    margin: 0 0 10px 0;
+}
+
+#title img{
+    display: inline-block;
+    margin-bottom: -10px;
+    margin-left: 20px;
+    filter: invert(100%);
+}
+
+#title:hover{
+    cursor: default;
+}
+
+#title img:hover{
+    cursor: pointer;
+    filter: invert(50%);
+}
+

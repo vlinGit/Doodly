@@ -1,0 +1,14 @@
+#pfpImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #e4e6e7;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#pfpImage img{
+    width: 100px;
+    height: 100px;
+    transform: scale(1.3);
+}
