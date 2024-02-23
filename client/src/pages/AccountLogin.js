@@ -12,17 +12,15 @@ const sidebarList = Object.fromEntries(sidebarContext.keys().map(icon => [icon.s
 function AccountSignUp() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const postSignup = () => {
+  const postLogin = () => {
     const body = {
       "username": username,
-      "email": email,
       "password": password
     };
     axios.defaults.withCredentials = true;
-    axios.post("http://localhost:5000/signup", body)
+    axios.post("http://localhost:5000/login", body)
       .then((res) => {
         console.log(res);
         navigate("/");
@@ -35,16 +33,15 @@ function AccountSignUp() {
   return (
     <div className="mainContainer">
       <div id="signupContainer">
-          <h1>Signup</h1>
-          <InputBox change={setEmail} src={sidebarList.email} name={"email"} type={"text"} placeholder={"Email"}/>
+          <h1>Login</h1>
           <InputBox change={setUsername} src={sidebarList.account} name={"name"} type={"text"} placeholder={"Username"}/>
           <InputBox change={setPassword} src={sidebarList.padlock} name={"password"} type={"password"} placeholder={"Password"}/>
           <div id="buttonPair">
-              <MenuButton clicked={() => postSignup()} id="buttonLeft" title="Create Account"/>
+              <MenuButton clicked={() => postLogin()} id="buttonLeft" title="Login"/>
               <MenuButton clicked={() => navigate("/")} title="Cancel"/>
           </div>
           <div id="errorMessage"></div>
-          <div id="login"><p style={{fontWeight: 'bolder', textAlign: 'center'}}>Have an account?</p> <MenuButton clicked={() => navigate("/login")} title="Login"/></div>
+          <div id="signup"><p style={{fontWeight: 'bolder', textAlign: 'center'}}>Don't have an account?</p> <MenuButton clicked={() => navigate("/signup")} title="Signup"/></div>
       </div>
     </div>
   )

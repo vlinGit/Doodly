@@ -15,7 +15,6 @@ const imageConstraint = {
 
 // change to a request to server, if server finds this authtoken then direct to account page, otherwise signup page
 const signupPage = (navigate) => {
-  console.log(Cookie.get("authToken"))
   if (Cookie.get("authToken")){
     navigate("/accountPage");
   }else{

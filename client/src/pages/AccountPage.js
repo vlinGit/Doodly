@@ -1,5 +1,6 @@
 import { React, useState} from 'react';
 import axios from 'axios';
+import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
 import MenuButton from '../components/MenuButton';
 import InputBox from '../components/InputBox';
@@ -16,8 +17,15 @@ function AccountPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  // change this to a server request
+  const checkAuthToken = () => {
+    if (!Cookies.get("authToken")){
+      navigate('/signup');
+    }
+  }
+
   return (
-    <div className="mainContainer">
+    <div onLoad={() => checkAuthToken()} className="mainContainer">
       <div id="signupContainer">
         <div id="pfpImage">
           <img src={sidebarList.defaultPFP}/>

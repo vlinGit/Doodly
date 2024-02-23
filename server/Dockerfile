@@ -13,4 +13,4 @@ RUN chmod +x /wait
 
 RUN npm install
 
-CMD /wait && node server.js
+CMD /wait && npm start
