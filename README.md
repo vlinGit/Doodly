@@ -1,6 +1,6 @@
 # Doodly (in development)
 
-A drawing web app for making quick sketches. Currently has nothing interesting going on :(
+Basic drawing and account endpoints are available
 
 ## Running the app
 ### Prereqs
