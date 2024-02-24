@@ -1,6 +1,7 @@
 # Doodly (in development)
 
-Basic drawing and account endpoints are available
+Basic drawing and account endpoints are available <br>
+![Doodly's Tech Stack](https://github-readme-tech-stack.vercel.app/api/cards?title=Doodly%27s+Tech+Stack&titleAlign=center&fontFamily=Consolas&fontSize=22&showBorder=false&lineCount=1&width=350&hideBg=true&hideTitle=true&bg=%230d1117&badge=%230d1117&border=%230d1117&line1=react%2Creact%2C58a6ff%3Bexpress%2Cexpress%2Cdab83b%3Bdocker%2Cdocker%2C025395%3B)
 
 ## Running the app
 ### Prereqs
